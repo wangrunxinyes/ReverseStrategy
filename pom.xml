@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.wangrunxin.component</groupId>
+    <artifactId>reverse-strategy</artifactId>
+    <version>1.0.0</version>
+    <name>reverse engineering strategy</name>
+    <description>strategy for reverse engineering</description>
+    <properties>
+        <java.version>21</java.version>
+        <hibernate.version>6.3.1.Final</hibernate.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.hibernate.tool</groupId>
+            <artifactId>hibernate-tools-orm</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>wangrunxin-maven-release</id>
+            <name>maven release</name>
+            <url>https://nas.wangrunxin.com:8082/repository/maven-central/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+        <snapshotRepository>
+            <id>wangrunxin-private-snapshot</id>
+            <name>private snapshot</name>
+            <url>https://nas.wangrunxin.com:8082/repository/wangrunxin-maven-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
